@@ -1,6 +1,4 @@
 import React from 'react';
-import TextInputField from './textInputField';
-import SecuredInputField from './securedInputField'
 
 export default class LoginForm extends React.Component {
     render() {
@@ -10,11 +8,12 @@ export default class LoginForm extends React.Component {
                     <h3 className="cont-item">Log In</h3>
                     <div className="row cont-item">
                         <label>Username: </label>
-                        <TextInputField />
+                        <input id="password-field" type="password" placeholder="Password"></input>
                     </div>
                     <div className="row cont-item">
                         <label>Password: </label>
-                        <SecuredInputField />
+                        <input type="text" id="username-field" placeholder="User Name"></input>
+                        
                     </div>
                 </div>
             </div>
