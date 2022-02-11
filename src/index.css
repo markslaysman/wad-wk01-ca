@@ -1,17 +1,3 @@
-body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
-}
-
 .container-fluid {
 	display: grid;
 
@@ -31,3 +17,42 @@ code {
 	justify-content: center;
 	align-content: center;
 }
+
+/* My NavBar Setup */
+.my-navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 0;
+}
+
+.my-navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.my-navbar li {
+	float: left;
+}
+
+.my-navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.my-navbar li a:hover {
+	background-color: #111;
+}
+
+.active {
+	background-color: purple;
+}
+/* END NAV BAR */
